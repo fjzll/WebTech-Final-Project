@@ -2,10 +2,141 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
     <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
-
+    <header class="sticky top-0 flex flex-col justify-between p-6 mx-auto md:flex-row gap-2 bg-gray-800 text-gray-400">
+        <section class="flex items-center mb-4 title-font md:mb-0 gap-2">
+            <img src="https://placehold.co/400x400" alt="Logo" width="40" height="40">
+            <h1 class="text-sm">Web Tech Final Project</h1>
+        </section>
+        <nav class="flex text-base md:ml-auto">
+            <ul class="flex gap-x-4 list-none">
+                <li><a href="index.html" class="text-gray-400 border-b border-gray-400 hover:border-gray-200 hover:text-white">Home</a></li>
+                <li><a href="about.html" class="text-gray-400 border-b border-gray-400 hover:border-gray-200 hover:text-white">About</a></li>
+                <li><a href="contact.html" class="text-gray-400 border-b border-gray-400 hover:border-gray-200 hover:text-white">Contact</a></li>
+                <li><a href="projects.html" class="text-gray-400 border-b border-gray-400 hover:border-gray-200 hover:text-white">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="max-w-7xl mx-auto px-4 my-8 space-y-8">
+        <article>
+            <header class="my-4">
+                <h1 class="text-xl font-bold text-gray-500">Welcome message</h1>
+            </header>
+            <p>
+                Welcome to my GitHub website!
+            </p>
+        </article>
+        <article>
+            <header class="my-4">
+                <h1 class="text-xl font-bold text-gray-500">About Me</h1>
+            </header>
+            <p>
+                Hi, I'm Lili - a passionate indie developer who loves to code. I am currently completing a
+                Certificate IV in Programming and love building products using technologies like HTML, CSS,
+                Javascript, C#, .NET and SQL. I am curious, always ready to learn new things.
+            </p>
+            <a href="about.html" class="text-gray-600">Find more details in my About page</a>
+        </article>
+        <article>
+            <header class="my-4">
+                <h1 class="text-xl font-bold text-gray-500">My Projects</h1>
+            </header>
+            <p>
+                The following are some of my projects including different languages, such as
+                HTML, CSS, Javascript, Python, C#, .NET and SQL.
+            </p>
+            <a href="projects.html" class="text-gray-600 block">
+                Find more details in my Projects page</a>
+            <br>
+            <section class="flex flex-wrap gap-4">
+                <article class="w-1/4 border border-gray-500 flex flex-col gap-4 p-4">
+                    <header class="bg-gray-800 text-gray-200 p-4 -m-4 mb-0">
+                        <h4 class="text-bold text-xl">Wordle Project</h4>
+                    </header>
+                    <figure class="-m-4 mb-2" >
+                        <img src="" alt="wordle image"
+                         class="w-full h-full object-cover">
+                    </figure>
+                    <a href="#" class="flex flex-col gap-4">A Wordle game using Python.</a>
+                    <footer class="bg-gray-200 text-gray-800 p-4 -m-4 mt-0">
+                        <p>Lili Zheng & Amir Khan</p>
+                    </footer>
+                </article>
+                <article class="w-1/4 border border-gray-500 flex flex-col gap-4 p-4">
+                    <header class="bg-gray-800 text-gray-200 p-4 -m-4 mb-0">
+                        <h4 class="text-bold text-xl">Suburb Explorer APP</h4>
+                    </header>
+                    <figure class="-m-4 mb-2" >
+                        <img src="" alt="suburb explorer image"
+                            class="w-full h-full object-cover">
+                    </figure>
+                    <a href="phase-2" class="flex flex-col gap-4">A mobile app built with .NET MAUI.</a>
+                    <footer class="bg-gray-200 text-gray-800 p-4 -m-4 mt-0">
+                        <p>Lili Zheng & Amir Khan</p>
+                    </footer>
+                </article>
+                <article class="w-1/4 border border-gray-500 flex flex-col gap-4 p-4">
+                    <header class="bg-gray-800 text-gray-200 p-4 -m-4 mb-0">
+                        <h4 class="text-bold text-xl">Portfolio Website</h4>
+                    </header>
+                    <figure class="-m-4 mb-2" >
+                        <img src="" alt="Portfolio img"
+                             class="w-full h-full object-cover">
+                    </figure>
+                    <a href="" class="flex flex-col gap-4">Portfolio website with Tailwind CSS</a>
+                    <footer class="bg-gray-200 text-gray-800 p-4 -m-4 mt-0">
+                        <p>Lili Zheng & Amir Khan</p>
+                    </footer>
+                </article>
+                <article class="w-1/4 border border-gray-500 flex flex-col gap-4 p-4">
+                    <header class="bg-gray-800 text-gray-200 p-4 -m-4 mb-0">
+                        <h4 class="text-bold text-xl">Moondaup Car Park</h4>
+                    </header>
+                    <figure class="-m-4 mb-2" >
+                        <img src="" alt="Moondalup img"
+                             class="w-full h-full object-cover">
+                    </figure>
+                    <a href="" class="flex flex-col gap-4">Smart Car Park using Python and MQTT</a>
+                    <footer class="bg-gray-200 text-gray-800 p-4 -m-4 mt-0">
+                        <p>Lili Zheng & Amir Khan</p>
+                    </footer>
+                </article>
+                <article class="w-1/4 border border-gray-500 flex flex-col gap-4 p-4">
+                    <header class="bg-gray-800 text-gray-200 p-4 -m-4 mb-0">
+                        <h4 class="text-bold text-xl">Open Source Project</h4>
+                    </header>
+                    <figure class="-m-4 mb-2" >
+                        <img src="" alt="Open source img"
+                             class="w-full h-full object-cover">
+                    </figure>
+                    <a href="" class="flex flex-col gap-4">Open source project using Python</a>
+                    <footer class="bg-gray-200 text-gray-800 p-4 -m-4 mt-0">
+                        <p>Lili Zheng & Amir Khan</p>
+                    </footer>
+                </article>
+            </section>
+        </article>
+    </main>
+    <footer class="text-gray-400 bg-gray-800 body-font w-full flex flex-col items-start justify-between p-6
+            md:flex-row gap-2">
+        <img src="https://placehold.co/400" alt="Logo" width="40" height="40">
+        <p class="flex flex-wrap pl-6 ml-6 text-base border-l border-gray-400 grow">
+            &copy;Copyright 2025. Lili Zheng & Amir Khan
+        </p>
+        <nav class="flex text-base md:ml-auto">
+            <ul class="flex gap-x-4 list-none">
+                <li><a href="index.html" class="text-gray-400 border-b border-gray-400 hover:border-gray-200 hover:text-white">Home</a></li>
+                <li><a href="about.html" class="text-gray-400 border-b border-gray-400 hover:border-gray-200 hover:text-white">About</a></li>
+                <li><a href="contact.html" class="text-gray-400 border-b border-gray-400 hover:border-gray-200 hover:text-white">Contact</a></li>
+                <li><a href="projects.html" class="text-gray-400 border-b border-gray-400 hover:border-gray-200 hover:text-white">Projects</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>
