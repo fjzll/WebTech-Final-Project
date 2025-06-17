@@ -2,9 +2,70 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
-
+    <header class="sticky top-0 flex flex-col justify-between p-6 mx-auto md:flex-row gap-2 bg-gray-800 text-gray-400">
+        <section class="flex items-center mb-4 title-font md:mb-0 gap-2">
+            <img src="assets/img/logo.jpg" alt="Logo" width="40" height="40">
+            <h1 class="text-sm">Web Tech Final Project</h1>
+        </section>
+        <nav class="flex text-base md:ml-auto">
+            <ul class="flex gap-x-4 list-none">
+                <li><a href="index.html" class="text-gray-400 border-b border-gray-400 hover:border-gray-200 hover:text-white">Home</a></li>
+                <li><a href="about.html" class="text-gray-400 border-b border-gray-400 hover:border-gray-200 hover:text-white">About</a></li>
+                <li><a href="contact.html" class="text-gray-400 border-b border-gray-400 hover:border-gray-200 hover:text-white">Contact</a></li>
+                <li><a href="projects.html" class="text-gray-400 border-b border-gray-400 hover:border-gray-200 hover:text-white">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="w-full flex flex-col my-14 max-w-screen-md mx-auto">
+            <header>
+                <h1 class="text-2xl text-gray-500 p-2 text-center font-bold mb-6">
+                    Contact Us
+                </h1>
+            </header>
+            <section class="shadow p-4">
+                <form  method="post" action="#" class="flex flex-col gap-4 ">
+                    <section class="flex flex-col gap-4 ">
+                        <label class="mb-1 text-gray-700 font-medium" for="Name">Name:</label>
+                        <input class="shadow p-4 rounded w-full" type="text" id="Name">
+                    </section>
+                    <section  class="flex flex-col gap-4 ">
+                        <label class="mb-1 text-gray-700 font-medium" for="Email">Email:</label>
+                        <input class="shadow p-4 rounded w-full" type="number" id="Email">
+                    </section>
+                    <section  class="flex flex-col gap-4 ">
+                        <label class="mb-1 text-gray-700 font-medium" for="Message">Message:</label>
+                        <textarea class="shadow p-4 rounded w-full"  rows="15" type="text" id="Message"></textarea>
+                    </section>
+                    <button class="rounded p-1 h-[60px] bg-blue-500 text-white
+                         hover:bg-blue-600 transition duration-300 w-full mx-auto">
+                        Save
+                    </button>
+                </form>
+            </section>
+        </article>
+    </main>
+    <footer class="text-gray-400 bg-gray-800 body-font w-full flex flex-col items-start justify-between p-6
+            md:flex-row gap-2">
+        <img src="assets/img/logo.jpg" alt="Logo" width="40" height="40">
+        <p class="flex flex-wrap pl-6 ml-6 text-base border-l border-gray-400 grow">
+            &copy;Copyright 2025. Lili Zheng & Amir Khan
+        </p>
+        <nav class="flex text-base md:ml-auto">
+            <ul class="flex gap-x-4 list-none">
+                <li><a href="index.html" class="text-gray-400 border-b border-gray-400 hover:border-gray-200 hover:text-white">Home</a></li>
+                <li><a href="about.html" class="text-gray-400 border-b border-gray-400 hover:border-gray-200 hover:text-white">About</a></li>
+                <li><a href="contact.html" class="text-gray-400 border-b border-gray-400 hover:border-gray-200 hover:text-white">Contact</a></li>
+                <li><a href="projects.html" class="text-gray-400 border-b border-gray-400 hover:border-gray-200 hover:text-white">Projects</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>
