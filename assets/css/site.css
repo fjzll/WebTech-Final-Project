@@ -586,11 +586,6 @@ video {
   margin-bottom: 2rem;
 }
 
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-
 .mb-0 {
   margin-bottom: 0px;
 }
@@ -617,18 +612,6 @@ video {
 
 .mt-0 {
   margin-top: 0px;
-}
-
-.ml-4 {
-  margin-left: 1rem;
-}
-
-.ml-96 {
-  margin-left: 24rem;
-}
-
-.ml-auto {
-  margin-left: auto;
 }
 
 .block {
@@ -819,6 +802,11 @@ video {
 
 .font-medium {
   font-weight: 500;
+}
+
+.text-blue-600 {
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity, 1));
 }
 
 .text-gray-200 {
