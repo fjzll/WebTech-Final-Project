@@ -1,10 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About</title>
+    <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
-
+    <header class="sticky top-0 flex flex-col justify-between p-6 mx-auto md:flex-row gap-2 bg-gray-800 text-gray-400">
+        <section class="flex items-center mb-4 title-font md:mb-0 gap-2">
+            <img src="assets/img/logo.jpg" alt="Logo" width="40" height="40">
+            <h1 class="text-sm">Web Tech Final Project</h1>
+        </section>
+        <nav class="flex text-base md:ml-auto">
+            <ul class="flex gap-x-4 list-none">
+                <li><a href="index.html" class="text-gray-400 border-b border-gray-400 hover:border-gray-200 hover:text-white">Home</a></li>
+                <li><a href="about.html" class="text-gray-400 border-b border-gray-400 hover:border-gray-200 hover:text-white">About</a></li>
+                <li><a href="contact.html" class="text-gray-400 border-b border-gray-400 hover:border-gray-200 hover:text-white">Contact</a></li>
+                <li><a href="projects.html" class="text-gray-400 border-b border-gray-400 hover:border-gray-200 hover:text-white">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="mx-auto max-w-xl text-center">
+            <header class="my-4">
+                <h1 class="text-xl font-bold text-gray-500">Bio details</h1>
+            </header>
+            <figure class="mx-auto my-4">
+                <img src="assets/img/bio.jpg" alt="bio picture" width="400" height="400" class="mx-auto">
+            </figure>
+            <br>
+            <section class="my-4 text-left">
+                <h2 class="text-xl font-bold text-gray-500">
+                    Education
+                </h2>
+                <p>
+                    Certificate IV in Programming, TAFE WA
+                </p>
+                <br>
+                <h2 class="text-xl font-bold text-gray-500">
+                    Technical Skills
+                </h2>
+                <ul>
+                    <li><strong>Languages</strong> Python, C#, HTML, CSS, JavaScript</li>
+                    <li><strong>Frameworks</strong> .NET Maui, Tailwind CSS</li>
+                    <li><strong>Database</strong> MySQL</li>
+                </ul>
+                <br>
+                <h2 class="text-xl font-bold text-gray-500">
+                    Projects
+                </h2>
+                <ul>
+                    <li><strong>Wordle Project</strong> A python project inspired by the popular five letter word guessing game</li>
+                    <li><strong>Suburb Explorer APP</strong> A mobile app that analyzes demographic data and investment potential based on suburb input</li>
+                    <li><strong>Portfolio Website</strong> A personal website showcasing my projects.</li>
+                    <li><strong>Moondalup Car Park</strong> A smart car park system built with Python and MQTT</li>
+                    <li><strong>Open Source Project</strong> Contribute to open source repository.</li>
+                </ul>
+                <br>
+                <h2 class="text-xl font-bold text-gray-500">
+                    Interests
+                </h2>
+                <p>
+                    Outside of coding, I enjoy reading, hiking, and travelling.
+                </p>
+            </section>
+            <br>
+        </article>
+    </main>
+    <footer class="text-gray-400 bg-gray-800 body-font w-full flex flex-col items-start justify-between p-6
+            md:flex-row gap-2">
+        <img src="assets/img/logo.jpg" alt="Logo" width="40" height="40">
+        <p class="flex flex-wrap pl-6 ml-6 text-base border-l border-gray-400 grow">
+            &copy;Copyright 2025. Lili Zheng & Amir Khan
+        </p>
+        <nav class="flex text-base md:ml-auto">
+            <ul class="flex gap-x-4 list-none">
+                <li><a href="index.html" class="text-gray-400 border-b border-gray-400 hover:border-gray-200 hover:text-white">Home</a></li>
+                <li><a href="about.html" class="text-gray-400 border-b border-gray-400 hover:border-gray-200 hover:text-white">About</a></li>
+                <li><a href="contact.html" class="text-gray-400 border-b border-gray-400 hover:border-gray-200 hover:text-white">Contact</a></li>
+                <li><a href="projects.html" class="text-gray-400 border-b border-gray-400 hover:border-gray-200 hover:text-white">Projects</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>
