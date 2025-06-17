@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact Us</title>
     <link rel="stylesheet" href="assets/css/site.css">
+    <script defer src="assets/js/contact-form.js"></script>
 </head>
 <body>
     <header class="sticky top-0 flex flex-col justify-between p-6 mx-auto md:flex-row gap-2 bg-gray-800 text-gray-400">
@@ -33,20 +34,23 @@
             <section class="shadow p-4">
                 <form  method="post" action="#" class="flex flex-col gap-4 ">
                     <section class="flex flex-col gap-4 ">
-                        <label class="mb-1 text-gray-700 font-medium" for="Name">Name:</label>
-                        <input class="shadow p-4 rounded w-full" type="text" id="Name">
+                        <label class="mb-1 text-gray-700 font-medium" for="name">Name:</label>
+                        <input class="shadow p-4 rounded w-full" type="text" id="name">
+                        <span class="text-red-500 font-medium" id="nameError"></span>
                     </section>
                     <section  class="flex flex-col gap-4 ">
-                        <label class="mb-1 text-gray-700 font-medium" for="Email">Email:</label>
-                        <input class="shadow p-4 rounded w-full" type="number" id="Email">
+                        <label class="mb-1 text-gray-700 font-medium" for="email">Email:</label>
+                        <input class="shadow p-4 rounded w-full" type="email" id="email">
+                        <span class="text-red-500 font-medium" id="emailError"></span>
                     </section>
                     <section  class="flex flex-col gap-4 ">
-                        <label class="mb-1 text-gray-700 font-medium" for="Message">Message:</label>
-                        <textarea class="shadow p-4 rounded w-full"  rows="15" type="text" id="Message"></textarea>
+                        <label class="mb-1 text-gray-700 font-medium" for="message">Message:</label>
+                        <textarea class="shadow p-4 rounded w-full"  rows="15" type="text" id="message"></textarea>
+                        <span class="text-red-500 font-medium" id="messageError"></span>
                     </section>
                     <button class="rounded p-1 h-[60px] bg-blue-500 text-white
-                         hover:bg-blue-600 transition duration-300 w-full mx-auto">
-                        Save
+                         hover:bg-blue-600 transition duration-300 w-full mx-auto" id="submit" type="button">
+                        Submit
                     </button>
                 </form>
             </section>
