@@ -2,9 +2,242 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>My Sample Project</title>
+    <link rel="stylesheet" href="assets/css/meyer-reset.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script defer src="assets/js/main.js"></script>
 </head>
 <body>
+<header class="header">
+    <img class="header-item" src="assets/img/logo.jpg" alt="Logo" width="40" height="40">
+    <h1 class="header-item">Web Tech Portfolio</h1>
+    <button class="header-nav-button">
+        <span class="header-nav-icon"></span>
+    </button>
+    <nav class="header-nav">
+        <a class="nav-item" href="index.html">Home</a>
+        <a class="nav-item"  href="#about">About</a>
+        <a class="nav-item" href="#instruction">Instruction</a>
+    </nav>
+</header>
+<main class="container">
+    <article>
+        <header>
+            <h2>Teacher + Student = dumb and dumber</h2>
+        </header>
+        <section>
+            <h3>Copy, Copy</h3>
+            <p>
+                David Tune of Boambee, NSW, was reminded of a particularly clever pair of IT Diploma
+                students who handed in a joint research assignment, complete with the required signed
+                statement that it was all their original work.
+            </p>
+            <p>
+                Tune recalls: Upon reading the work for grading, I was incredibly impressed to find
+                three pages of the document written in perfect technical German, particularly given
+                that the students in question were none too articulate when I asked 'Sprechen sie Deutsch?'
+            </p>
+        </section>
+        <section>
+            <h3>End result</h3>
+            <p>
+                Assignment rejected, students counselled and more care taken when cutting
+                and pasting to cover assignment work.
+            </p>
+        </section>
+        <img src="assets/img/mika-baumeister-LprSBJPM04k-unsplash.jpg"
+             alt="Mika" width="400" height="300">
+    </article>
+    <article id ="about">
+        <header>
+            <h2>We had no idea there were so many dumb IT trainers and students out there.</h2>
+        </header>
+        <section>
+            <h3>THAT'S MY LECTURE</h3>
+            <p>
+                Anyone attending an IT lecture should expect that the lecturer knows the subject.
+            </p>
+        </section>
+        <section>
+            <h3>BUT IT LECTURERS ARE A FUNNY LOT</h3>
+            <p>
+                Jun Li, a programmer, recalls working in IT support at a school.
 
+                "I was told to set up a projector in one of the meeting rooms for school staff,
+                as there was a presentation. Having done that, I hooked the presentation laptop
+                to the network and tried to help one of the speakers from the IT faculty update
+                the laptop to IE7. I logged off and asked her to log on with her account to try
+                IE7.
+            </p>
+            <p>
+                'What is that?' she asked when the IE7 install process asked whether phishing
+                should be turned on. After I explained it, she told me that she was about to
+                present a talk on internet security."
+            </p>
+        </section>
+        <img src="assets/img/markus-spiske-94P6pStoE84-unsplash.jpg"
+             alt="Markus" width="400" height="300">
+    </article>
+    <article id="api">
+        <header>
+            <h2>Find the pets that suits you</h2>
+        </header>
+        <br>
+        <form>
+            <section>
+                <h3>Pick from the following: </h3>
+                <p>
+                    <input type="checkbox" name="apis" id="cats" value="cats">
+                    <label for="cats">Cats</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="apis" id="dogs" value="dogs">
+                    <label for="dogs">Dogs</label>
+                </p>
+                <br>
+            </section>
+            <br>
+            <section>
+                <h3>How playful you like you pet to be:</h3>
+                <p>
+                    <label for="userInput">Choose from 1 to 5. 1 being least playful and 5 most playful.</label>
+                    <br>
+                    <textarea id="userInput" rows="4" cols="50"></textarea>
+                    <br>
+                    <button type="button" id="getResponseButton">Get Response</button>
+                </p>
+            </section>
+            <br>
+            <section>
+                <h3>Here is the result</h3>
+                <p id="apiResponseContainer">Suitable pets will display here.</p>
+            </section>
+        </form>
+    </article>
+    <article id="contact">
+        <header>
+            <h2>The stories just keep coming in.</h2>
+        </header>
+        <section>
+            <h3>TUTORING THE TUTOR</h3>
+            <p>
+                Someone from IT got out the disc the next day when they upended the machine
+                and it fell out. Then, a week later, after I gave the lecturer her CD back,
+                she was back within five minutes, saying, 'You won't believe it, I've done it again!'
+            </p>
+        </section>
+        <section>
+            <h3>
+                HANDLE COMPUTERS WITH CARE!
+            </h3>
+            <p>
+                And this was their computing tutor? So there I am in front of her class,
+                shaking the heck out of the machine. So much for teaching people to handle
+                their computers with care!"
+            </p>
+        </section>
+        <img src="assets/img/benjamin-lehman-GNyjCePVRs8-unsplash.jpg"
+             alt="Benjamin Lehman" width="400" height="300">
+    </article>
+    <article id="five">
+        <header>
+            <h2>PC tinkerer</h2>
+        </header>
+        <section>
+            <h3>DOESN'T IT JUST WORK?</h3>
+            <p>
+                Ian Caldewell, a self-styled 'PC tinkerer', refurbishes PCs, and has ways of
+                acquiring modems, monitors, CPUs, boxes and RAM - to the point where it has
+                become a pastime consuming most of his leisure time. He now has streams of
+                people seeking repairs, advice and assistance.
+            </p>
+        </section>
+        <section>
+            <h3>
+                Did you put batteries in it?!
+            </h3>
+            <p>
+                "Recently, I replaced an old power supply for a couple, and, when they came
+                to collect, they asked whether I made house calls.
+
+                I said I could and asked what they needed."
+
+                The lady told Caldewell she'd bought a new wireless mouse, and, since it
+                was the last one on display, it didn't come with a box or instructions.
+
+                "I asked her: 'Did you put batteries in it?!'
+
+                She hadn't, of course."
+            </p>
+        </section>
+        <img src="assets/img/visuals-JpTY4gUviJM-unsplash.jpg"
+             alt="visuals" width="400" height="300">
+    </article>
+    <article id="six">
+        <header>
+            <h2>Most Stressful jobs on earth</h2>
+        </header>
+        <section>
+            <h3>MAKE MY DAY, PC</h3>
+            <p>
+                Chris Aitken, a designer and programmer from Camden, NSW, believes his story
+                proves that tech support is one of the most stressful jobs on earth. He recalls
+                working for a small internet provider in the late '90s, when one of the customers
+                was a local police officer.
+            </p>
+        </section>
+        <section>
+            <h3>
+                Fix a computer by intimidating it.
+            </h3>
+            <p>
+                "He was also an expert in crashing Windows 98. On one occasion, he brought his
+                tower into the office, sat it on the counter, pulled his service pistol out of
+                his holster and pointed it straight at the tower, threatening to shoot it.
+
+                Another time he put his (by now very nervous) PC tower onto the counter, again
+                took out his pistol, held it by the barrel and started banging the butt of the
+                gun onto the top of the computer, quite hard too.
+
+                It's no wonder techies go grey - or bald - early!"
+
+                This is the first we've heard of someone trying to fix a computer by intimidating it.
+            </p>
+        </section>
+        <img src="assets/img/towfiqu-barbhuiya-FGqEuM0wuKk-unsplash.jpg"
+             alt="Towfiqu" width="400" height="300">
+    </article>
+</main>
+<aside class="sidebar">
+    <section>
+        <h3>Comment</h3>
+        <p>Teacher + Student = dumb and dumber</p>
+        <footer class="aside-footer">&lt;&lt;&lt;&copy;Lili Zheng&gt;&gt;&gt;</footer>
+    </section>
+    <section>
+        <h3>Copyright</h3>
+        <p>This content is derived from APC Magazine, November 2007.</p>
+    </section>
+    <section>
+        <h3>More comment</h3>
+        <p>We had no idea there were so many dumb IT trainers and students out there.</p>
+    </section>
+    <section>
+        <h3>Even more comment</h3>
+        <p>The stories just keep coming in.</p>
+    </section>
+    <img src="assets/img/branko-stancevic-GI1hwOGqGtE-unsplash.jpg"
+         alt="branko" width="150" height="100">
+</aside>
+<footer class="footer">
+    <p>
+        &copy;Copyright 2025. Lili Zheng & Amir Khan
+    </p>
+    <nav class="footer-nav">
+        <a class="footer-nav-item" href="index.html">Home</a> |
+        <a class="footer-nav-item" href="#about">About</a> |
+        <a class="footer-nav-item" href="#instruction">Instruction</a>
+    </nav>
+</footer>
 </body>
 </html>
