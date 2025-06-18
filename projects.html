@@ -2,9 +2,130 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projects</title>
+    <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
+<header class="sticky top-0 flex flex-col justify-between p-6 mx-auto md:flex-row gap-2 bg-gray-800 text-gray-400">
+    <section class="flex items-center mb-4 title-font md:mb-0 gap-2">
+        <img src="assets/img/logo.jpg" alt="Logo" width="40" height="40">
+        <h1 class="text-sm">Web Tech Final Project</h1>
+    </section>
+    <nav class="flex text-base md:ml-auto">
+        <ul class="flex gap-x-4 list-none">
+            <li><a href="index.html" class="text-gray-400 border-b border-gray-400 hover:border-gray-200 hover:text-white">Home</a></li>
+            <li><a href="about.html" class="text-gray-400 border-b border-gray-400 hover:border-gray-200 hover:text-white">About</a></li>
+            <li><a href="contact.html" class="text-gray-400 border-b border-gray-400 hover:border-gray-200 hover:text-white">Contact</a></li>
+            <li><a href="projects.html" class="text-gray-400 border-b border-gray-400 hover:border-gray-200 hover:text-white">Projects</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="max-w-7xl mx-auto px-4 my-8 space-y-8">
+    <article>
+        <header class="my-4">
+            <h1 class="text-xl font-bold text-gray-500">My Projects</h1>
+        </header>
+        <p>
+            The following are some of my projects including different languages, such as
+            HTML, CSS, Javascript, Python, C#, .NET and SQL.
+        </p>
+        <br>
+        <table class="w-full border border-gray-400 border-collapse">
+            <caption class="font-bold text-xl mb-2">Projects</caption>
+            <thead>
+                <tr>
+                    <th scope="col" class="border border-gray-400 p-2" >Project name</th>
+                    <th scope="col" class="border border-gray-400 p-2">Project Description</th>
+                    <th scope="col" class="border border-gray-400 p-2">Tech Stack</th>
+                    <th scope="col" class="border border-gray-400 p-2">Link to see the page</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row" class="border border-gray-400 p-2">Wordle Project</th>
+                <td class="border border-gray-400 p-2">
+                    A terminal-based implementation of the popular Wordle game using Python.
+                    This project challenges players to guess a five-letter word within five attempts,
+                    providing feedback for each letter (correct, misplaced, or incorrect).
+                    It features input validation, word dictionary integration, and a clean command-line interface,
+                    making it a fun and educational exercise in string handling, logic, and user interaction.
+                </td>
+                <td class="border border-gray-400 p-2">Python</td>
+                <td class="border border-gray-400 p-2"></td>
+            </tr>
+            <tr>
+                <th scope="row" class="border border-gray-400 p-2">Suburb Explorer APP</th>
+                <td class="border border-gray-400 p-2">
+                    A cross-platform mobile application developed using .NET MAUI that allows
+                    users to search and view details about suburbs in Australia. The app
+                    includes features such as suburb statistics and suburb scores.
+                    Designed with a responsive UI and MVC architecture and integrates real-time
+                    data from ABS API to enhance the user experience.
+                </td>
+                <td class="border border-gray-400 p-2">C#, .NET MAUI, REST API</td>
+                <td class="border border-gray-400 p-2"></td>
+            </tr>
+            <tr>
+                <th scope="row" class="border border-gray-400 p-2">Portfolio Website</th>
+                <td class="border border-gray-400 p-2">
+                    A personal portfolio website built with HTML, Tailwind CSS,
+                    and JavaScript to showcase projects, skills, and experience. Designed
+                    with a mobile-first layout and smooth UI interactions.
+                </td>
+                <td class="border border-gray-400 p-2">HTML, Tailwind CSS, JavaScript, Ninja API</td>
+                <td class="border border-gray-400 p-2"><a href="mywork.html" class="text-blue-600">
+                    Link to my Portfolio page</a></td>
+            </tr>
+            <tr>
+                <th scope="row" class="border border-gray-400 p-2">Moondalup Car Park</th>
+                <td class="border border-gray-400 p-2">
+                    A smart car park management system developed to monitor
+                    parking availability in real time. Built using Python and MQTT protocol,
+                    the system simulates sensor-based tracking of vehicles entering and
+                    exiting the parking area. It features live data updates and occupancy status
+                    for IoT environments. This project demonstrates the integration of messaging
+                    protocols with backend logic for efficient, event-driven communication.</td>
+                <td class="border border-gray-400 p-2">Python, MQTT</td>
+                <td class="border border-gray-400 p-2"></td>
+            </tr>
+            <tr>
+                <th scope="row" class="border border-gray-400 p-2">Open Source Project</th>
+                <td class="border border-gray-400 p-2">
+                    A OCR tool to extract and recognize code from video tutorials,
+                    with a focus on accessibility for visually impaired developers.
+                    OcrRoo features a custom video player that analyzes video frames,
+                    detects code snippets using Optical Character Recognition (OCR),
+                    and reads the code aloud or provides structured output. This tool
+                    bridges the gap between visual learning resources and accessible
+                    education, making coding tutorials more inclusive and navigable
+                    for all users.
+                </td>
+                <td class="border border-gray-400 p-2">Python</td>
+                <td class="border border-gray-400 p-2"></td>
+            </tr>
 
+
+            </tbody>
+        </table>
+    </article>
+</main>
+<footer class="text-gray-400 bg-gray-800 body-font w-full flex flex-col items-start justify-between p-6
+            md:flex-row gap-2">
+    <img src="assets/img/logo.jpg" alt="Logo" width="40" height="40">
+    <p class="flex flex-wrap pl-6 ml-6 text-base border-l border-gray-400 grow">
+        &copy;Copyright 2025. Lili Zheng & Amir Khan
+    </p>
+    <nav class="flex text-base md:ml-auto">
+        <ul class="flex gap-x-4 list-none">
+            <li><a href="index.html" class="text-gray-400 border-b border-gray-400 hover:border-gray-200 hover:text-white">Home</a></li>
+            <li><a href="about.html" class="text-gray-400 border-b border-gray-400 hover:border-gray-200 hover:text-white">About</a></li>
+            <li><a href="contact.html" class="text-gray-400 border-b border-gray-400 hover:border-gray-200 hover:text-white">Contact</a></li>
+            <li><a href="projects.html" class="text-gray-400 border-b border-gray-400 hover:border-gray-200 hover:text-white">Projects</a></li>
+        </ul>
+    </nav>
+</footer>
 </body>
 </html>
