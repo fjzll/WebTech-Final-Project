@@ -52,7 +52,7 @@ button.addEventListener("click", (e) => {
             name,
             email,
             message,
-        }
+        };
 
         //Get submissions from localStorage or create a new array
         let submissions = JSON.parse(localStorage.getItem("submissions")) || [];
@@ -67,8 +67,5 @@ button.addEventListener("click", (e) => {
         document.getElementById("name").value = "";
         document.getElementById("email").value = "";
         document.getElementById("message").value = "";
-
     }
-
-})
-
+});
